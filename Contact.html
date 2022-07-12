@@ -1,0 +1,74 @@
+<!--
+    Notes on HTML Forms:
+    - on the contact section is a bit sparsw at the moment.
+    - we can add a form at the end of this where you allow people to put down their name and their email, also 
+    message us by using that form. 
+    - <form> is a form tag 
+        - to define what should go into our form and this by itself doesn't actually do anything.
+        inorder for the form to do anything you need two important HTML element and thats the label
+        and input. 
+        - <Label> Name:</label>
+            - Between the opening and closing label tags
+            you can write some text taht will be displayed as a label inside your form. 
+        - <Input> 
+            - Is a self closing tag
+            -  you can define input by using the Type Attribute. 
+            - <input type="text"/>
+                - There's a whole bunch of input types that you can tag into to use
+                inside your form. 
+                - in this example the input type is set to text so we get a textbox where the user can 
+                input their name. 
+            - <input type="submit"/>
+                - this creates a button 
+    - By setting the attribute type to varoues predefined key words, you actually end up with completely different things
+    on your website. 
+    - when looking at the MDN docs you'll see that there's loads of different keywords that you can use. 
+
+Notes on Forms in Practice-Create a contact me form:
+- 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <h3><strong>Contact</strong></h3>
+    <ul>
+      <li>Our Main Office</li>
+      19 Breckenridge Court Freehold,NJ 07728
+      <li>Phone Number</li>
+      (347)825-1084
+      <li>Fax</li>
+      (347)324-2493
+      <li>Email</li>
+      support@hihomeaccessories.com
+      <li>Business Hours</li>
+      Mon-Fri....10am-4pm<br />Sat,Sun....Closed
+    </ul>
+    <hr />
+    <h3>Get in touch</h3>
+    <form
+      action="mailto:shahiman42@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <lable for="Name">Name</lable>
+      <input type="text" id="YourName" name="name" /><br />
+      <br />
+      <lable for="Email">Email</lable>
+      <input type="text" id="YourEmail" name="email" value="" /> <br />
+      <br />
+      <label for="Message">Message</label><br />
+      <textarea name="YourMessage" rows="10" cols="30"></textarea>
+      <br />
+      <input type="submit" value="submit" /><br />
+      <br />
+    </form>
+  </body>
+</html>
